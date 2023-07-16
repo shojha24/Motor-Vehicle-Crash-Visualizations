@@ -1,2 +1,3 @@
 # Motor-Vehicle-Crash-Visualizations
-Group Members: Sharabh, Meera, Madhav; Mentor: Krish Naik.
+Group Members: Sharabh, Meera, Madhav
+Mentor: Krish Naik.
