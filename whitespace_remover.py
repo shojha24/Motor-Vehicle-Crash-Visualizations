@@ -6,17 +6,17 @@
 
 import csv
 
-csv_2020 = "old_csvs\\Monmouth2020Accidents.csv"
+csv_2020 = "Monmouth2020Drivers.csv"
 new_csv_2020 = "intermediate.csv"
-new_new_csv_2020 = "2020Accidents.csv"
-csv_2019 = "old_csvs\\Monmouth2019Accidents.csv"
+new_new_csv_2020 = "2020Drivers.csv"
+csv_2019 = "Monmouth2019Drivers.csv"
 new_csv_2019 = "intermediate.csv"
-new_new_csv_2019 = "2019Accidents.csv"
-csv_2018 = "old_csvs\\Monmouth2018Accidents.csv"
+new_new_csv_2019 = "2019Drivers.csv"
+csv_2018 = "Monmouth2018Drivers.csv"
 new_csv_2018 = "intermediate.csv"
-new_new_csv_2018 = "2018Accidents.csv"
+new_new_csv_2018 = "2018Drivers.csv"
 
-with open(csv_2018, 'r') as infile, open(new_csv_2018, 'w') as outfile:
+with open(csv_2020, 'r') as infile, open(new_csv_2020, 'w') as outfile:
     reader = csv.reader(infile)
     writer = csv.writer(outfile)
 
@@ -27,7 +27,7 @@ with open(csv_2018, 'r') as infile, open(new_csv_2018, 'w') as outfile:
         writer.writerow(row)
         print(row)
 
-with open(new_csv_2018, 'r') as infile, open(new_new_csv_2018, 'w') as outfile:
+with open(new_csv_2020, 'r') as infile, open(new_new_csv_2020, 'w') as outfile:
     for i, line in enumerate(infile):
         if i % 2 == 0:
             outfile.write(line)
